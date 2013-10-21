@@ -204,6 +204,7 @@ static BOOL _alwaysUseMainBundle = NO;
 	return appirater;
 }
 - (BOOL)shouldShowRating {
+    id <AppiraterDelegate> delegate = _delegate;
     if ( delegate && [delegate respondsToSelector:@selector(appirateShouldDisplayAlert:)] ) {
         return [delegate appirateShouldDisplayAlert:self];
     }
