@@ -13,7 +13,7 @@
 @protocol AppiraterDelegate <NSObject>
 
 @optional
--(BOOL)appirateShouldDisplayAlert:(Appirater *)appirater;
+-(BOOL)appiraterShouldDisplayAlert:(Appirater *)appirater;
 -(void)appiraterDidDisplayAlert:(Appirater *)appirater;
 -(void)appiraterDidDeclineToRate:(Appirater *)appirater;
 -(void)appiraterDidOptToRate:(Appirater *)appirater;
